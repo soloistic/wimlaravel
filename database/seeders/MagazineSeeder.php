@@ -58,8 +58,15 @@ class MagazineSeeder extends Seeder
                 continue;
             }
 
+            try {
+                $title = Carbon::createFromFormat('MY', $baseName)->format('F Y');
+            } catch (\Exception $e) {
+                $title = Str::title(str_replace(['-', '_'], ' ', $baseName));
+                Log::warning("Could not parse date from filename: {$pdfFileName}. Falling back to default title '{$title}'.");
+            }
+
             Pdf::create([
-                'title' => Str::title(str_replace(['-', '_'], ' ', $baseName)),
+                'title' => $title,
                 'pdf_url' => 'pdfs/' . $pdfFileName,
                 'thumbnail_url' => 'thumbnails/' . basename($thumbnailUrl),
                 'published_at' => Carbon::parse(substr($baseName, -7))->startOfMonth() ?? Carbon::now(), // Example: Extracts date from 'magazine-2025-01'
