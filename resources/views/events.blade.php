@@ -1,173 +1,132 @@
 @extends('layouts.app')
 
 @section('title', 'Events - Word Increase Ministries')
-@section('description', 'Upcoming events and activities from our magazine community')
+@section('description', 'Join our radio broadcasts and upcoming faith clinics')
 
 @section('content')
 <!-- Hero Section -->
-<div class="bg-orange-800">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <h1 class="text-4xl font-bold text-white mb-4">Events</h1>
-        <p class="text-xl text-white max-w-3xl mx-auto">
-            Join us for exciting events, workshops, and community gatherings throughout the year.
+<div class="relative overflow-hidden bg-brand-900 border-b border-brand-800/30">
+    <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-brand-600/20 blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-orange-500/10 blur-3xl pointer-events-none">
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold font-serif text-white mb-6">Events & Broadcasts</h1>
+        <p class="text-xl text-brand-100/90 max-w-3xl mx-auto font-light leading-relaxed">
+            Join us for powerful teachings and faith-building broadcasts.
         </p>
     </div>
 </div>
 
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <!-- Upcoming Events -->
-    <div class="mb-16">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Upcoming Events</h2>
+    <div class="mb-20">
+        <h2 class="text-3xl font-bold font-serif text-gray-900 mb-10 flex items-center gap-4">
+            Our Broadcast Schedule
+            <div class="h-px flex-1 bg-gray-200"></div>
+        </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Event Card 1 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
-                    <div class="text-center text-white">
-                        <div class="text-3xl font-bold">15</div>
-                        <div class="text-sm">March</div>
+            <!-- Faith Clinic Radio Card -->
+            <div
+                class="group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
+                <div
+                    class="h-48 bg-gradient-to-br from-brand-600 to-orange-500 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                    <div class="text-center text-white relative z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2 opacity-90" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                        </svg>
+                        <div class="text-xl font-bold font-serif tracking-tight">Radio UNILAG</div>
+                        <div class="text-sm font-medium tracking-widest uppercase">103.1 FM</div>
                     </div>
                 </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Magazine Launch Party</h3>
-                    <p class="text-gray-600 mb-4">Join us for the official launch of our Spring 2024 issue with live music, refreshments, and exclusive previews.</p>
-                    <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <x-svg-icon name="location" class="w-4 h-4 mr-2" />
-                        Downtown Gallery, Main Street
-                    </div>
-                    <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <x-svg-icon name="clock" class="w-4 h-4 mr-2" />
-                        7:00 PM - 10:00 PM
-                    </div>
-                    <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-                        RSVP Now
-                    </button>
-                </div>
-            </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <span class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-3 block">Weekly
+                        Broadcast</span>
+                    <h3
+                        class="text-2xl font-bold font-serif text-gray-900 mb-3 group-hover:text-brand-600 transition-colors leading-snug">
+                        Faith Clinic Programme</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-1 leading-relaxed">The ministry broadcasts the Faith
+                        Clinic programme every Saturday. Endeavour to listen to the clinic section and tell others about
+                        it. You will surely be blessed and healed by His teaching Words.</p>
 
-            <!-- Event Card 2 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
-                    <div class="text-center text-white">
-                        <div class="text-3xl font-bold">22</div>
-                        <div class="text-sm">March</div>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Writing Workshop</h3>
-                    <p class="text-gray-600 mb-4">Learn the art of storytelling and improve your writing skills with our experienced editors and published authors.</p>
-                    <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <x-svg-icon name="location" class="w-4 h-4 mr-2" />
-                        Community Center, Oak Avenue
-                    </div>
-                    <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <x-svg-icon name="clock" class="w-4 h-4 mr-2" />
-                        2:00 PM - 5:00 PM
-                    </div>
-                    <button class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors">
-                        Register
-                    </button>
-                </div>
-            </div>
-
-            <!-- Event Card 3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
-                    <div class="text-center text-white">
-                        <div class="text-3xl font-bold">05</div>
-                        <div class="text-sm">April</div>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Photography Exhibition</h3>
-                    <p class="text-gray-600 mb-4">Discover stunning photography from our featured artists and learn about visual storytelling techniques.</p>
-                    <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <x-svg-icon name="location" class="w-4 h-4 mr-2" />
-                        Art Gallery, River District
-                    </div>
-                    <div class="flex items-center text-sm text-gray-500 mb-4">
-                        <x-svg-icon name="clock" class="w-4 h-4 mr-2" />
-                        6:00 PM - 9:00 PM
-                    </div>
-                    <button class="w-full bg-orange-600 text-white py-2 px-4 rounded-lg hover:bg-orange-700 transition-colors">
-                        View Details
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Past Events -->
-    <div class="mb-16">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Past Events</h2>
-
-        <div class="space-y-6">
-            <!-- Past Event 1 -->
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Winter Issue Launch</h3>
-                        <p class="text-gray-600 mb-2">Celebrated the release of our Winter 2024 issue with an intimate gathering of contributors and readers.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <x-svg-icon name="calendar" class="w-4 h-4 mr-2" />
-                            February 10, 2024
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-start text-sm text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 mr-3 mt-0.5"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            Every Saturday
+                        </div>
+                        <div class="flex items-start text-sm text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 mr-3 mt-0.5"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            7:00 AM - 7:15 AM
                         </div>
                     </div>
-                    <div class="mt-4 md:mt-0 md:ml-6">
-                        <span class="inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Completed</span>
-                    </div>
+                    <a href="https://unilag.edu.ng/unilag-radio" target="_blank"
+                        class="block text-center w-full bg-brand-50 text-brand-700 font-semibold py-3 px-6 rounded-full hover:bg-brand-600 hover:text-white transition-all duration-300 shadow-sm mt-auto">
+                        Listen Online
+                    </a>
                 </div>
             </div>
 
-            <!-- Past Event 2 -->
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Editor's Meet & Greet</h3>
-                        <p class="text-gray-600 mb-2">An opportunity to meet our editorial team and discuss potential submissions and collaborations.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <x-svg-icon name="calendar" class="w-4 h-4 mr-2" />
-                            January 20, 2024
+            <!-- Faith for breakfast -->
+            <div
+                class="group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
+                <div
+                    class="h-48 bg-gradient-to-br from-brand-600 to-orange-500 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                    <div class="text-center text-white relative z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2 opacity-90" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                        </svg>
+                        <div class="text-xl font-bold font-serif tracking-tight">Virtual</div>
+                        <div class="text-sm font-medium tracking-widest uppercase">Youtube</div>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <span class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-3 block">Monthly
+                        event</span>
+                    <h3
+                        class="text-2xl font-bold font-serif text-gray-900 mb-3 group-hover:text-brand-600 transition-colors leading-snug">
+                        Faith For Breafkast</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-1 leading-relaxed">Join us for a moment of faith adventure
+                        for everyday victory.</p>
+
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-start text-sm text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 mr-3 mt-0.5"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            3rd Saturday of every month
+                        </div>
+                        <div class="flex items-start text-sm text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 mr-3 mt-0.5"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            9:00 AM - 10:00 AM
                         </div>
                     </div>
-                    <div class="mt-4 md:mt-0 md:ml-6">
-                        <span class="inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Completed</span>
-                    </div>
+                    <a href="https://bit.ly/m/WordIncreaseMinistry" target="_blank"
+                        class="block text-center w-full bg-brand-50 text-brand-700 font-semibold py-3 px-6 rounded-full hover:bg-brand-600 hover:text-white transition-all duration-300 shadow-sm mt-auto">
+                        Join Online
+                    </a>
                 </div>
             </div>
-
-            <!-- Past Event 3 -->
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Holiday Reading Circle</h3>
-                        <p class="text-gray-600 mb-2">A cozy gathering where we shared our favorite holiday stories and discussed the year's best reads.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <x-svg-icon name="calendar" class="w-4 h-4 mr-2" />
-                            December 15, 2023
-                        </div>
-                    </div>
-                    <div class="mt-4 md:mt-0 md:ml-6">
-                        <span class="inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Completed</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Event Newsletter Signup -->
-    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-center text-white">
-        <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
-        <p class="text-xl mb-6">Don't miss out on our upcoming events! Subscribe to our newsletter for the latest updates.</p>
-        <div class="max-w-md mx-auto flex gap-4">
-            <input
-                type="email"
-                placeholder="Enter your email address"
-                class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
-            >
-            <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Subscribe
-            </button>
         </div>
     </div>
 </div>

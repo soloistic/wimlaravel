@@ -12,9 +12,23 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $pdfs = Pdf::orderBy('published_at', 'desc')->get();
+        $pdfs = Pdf::orderBy('published_at', 'desc')->take(3)->get();
         
         return view('home', compact('pdfs'));
+    }
+
+    /**
+     * Display all magazines grouped by year.
+     */
+    public function voiceOfFaith()
+    {
+        $groupedPdfs = Pdf::orderBy('published_at', 'desc')
+            ->get()
+            ->groupBy(function($pdf) {
+                return \Carbon\Carbon::parse($pdf->published_at)->year;
+            });
+            
+        return view('voice-of-faith', compact('groupedPdfs'));
     }
 
     /**

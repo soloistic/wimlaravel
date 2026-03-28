@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Word Increase Ministries (aka WIM)')</title>
     <meta name="description" content="@yield('description', 'Word Increase Ministries (aka WIM)')">
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS CDN for quick styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            500: '#ea580c',
+                            600: '#d54d04',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
     <!-- Custom CSS -->
     <style>
@@ -34,30 +62,30 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body class="bg-brand-50 min-h-screen font-sans text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
+    <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-lg border-b border-gray-200/50 shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="{{ route('home') }}" class="text-2xl font-bold text-gray-800">
-                        Word Increase Ministries
+                    <a href="{{ route('home') }}" class="flex items-center gap-3 group">
+                        <img src="{{ asset('favicon.png') }}" alt="Word Increase Ministries" class="h-10 w-auto object-contain drop-shadow-sm group-hover:scale-105 transition-transform duration-300">
                     </a>
                 </div>
 
-                <div class="flex items-center space-x-8">
-                    <a href="{{ route('home') }}" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                    <a href="{{ route('about') }}" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
-                    <a href="{{ route('events') }}" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Events</a>
-                    <a href="{{ route('privacy') }}" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Privacy</a>
+                <div class="flex items-center space-x-1 sm:space-x-8">
+                    <a href="{{ route('home') }}" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-full text-sm font-medium transition-colors hover:bg-brand-50">Home</a>
+                    <a href="{{ route('about') }}" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-full text-sm font-medium transition-colors hover:bg-brand-50">About</a>
+                    <a href="{{ route('voice-of-faith') }}" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-full text-sm font-medium transition-colors hover:bg-brand-50">Voice of Faith</a>
+                    <a href="{{ route('events') }}" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-full text-sm font-medium transition-colors hover:bg-brand-50">Events</a>
+                    <a href="{{ route('privacy') }}" class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-full text-sm font-medium transition-colors hover:bg-brand-50">Privacy</a>
 
                     <!-- Social Media Links -->
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-gray-600">
-                            <x-svg-icon name="facebook" class="w-5 h-5" />
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-gray-600">
-                            <x-svg-icon name="instagram" class="w-5 h-5" />
+                    <div class="flex items-center space-x-4 sm:ml-2 sm:pl-4 sm:border-l border-gray-200">
+                        <a href="https://www.youtube.com/@wordincreaseministries" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-600 transition-colors" title="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -75,7 +103,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Word Increase Ministries</h3>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Word Increase Ministries</h3>
+                    <p class="text-gray-400 text-sm mb-2 hover:text-white transition-colors">
+                        <a href="mailto:wordincreaseministry@gmail.com">wordincreaseministry@gmail.com</a>
+                    </p>
+                    <p class="text-gray-400 text-sm mb-2 hover:text-white transition-colors">
+                        <a href="tel:+2348139323232">+234 813 932 3232</a>
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed mt-4">
+                        Faith in His Word always Wins.
+                    </p>
                 </div>
 
                 <div>
@@ -83,6 +120,7 @@
                     <ul class="space-y-2">
                         <li><a href="{{ route('home') }}" class="text-gray-300 hover:text-white">Home</a></li>
                         <li><a href="{{ route('about') }}" class="text-gray-300 hover:text-white">About</a></li>
+                        <li><a href="{{ route('voice-of-faith') }}" class="text-gray-300 hover:text-white">Voice of Faith</a></li>
                         <li><a href="{{ route('events') }}" class="text-gray-300 hover:text-white">Events</a></li>
                         <li><a href="{{ route('privacy') }}" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
                     </ul>
@@ -90,9 +128,13 @@
 
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-300 hover:text-white">Facebook</a>
-                        <a href="#" class="text-gray-300 hover:text-white">Instagram</a>
+                    <div class="flex flex-col space-y-3">
+                        <a href="https://www.youtube.com/@wordincreaseministries" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white inline-flex items-center gap-2 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 group-hover:text-red-500 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                            YouTube Channel
+                        </a>
                     </div>
                 </div>
             </div>
