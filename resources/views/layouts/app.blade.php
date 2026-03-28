@@ -85,8 +85,10 @@
                     <a href="{{ route('about') }}"
                         class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-full text-sm font-medium transition-colors hover:bg-brand-50">About</a>
                     <a href="{{ route('voice-of-faith') }}"
-                        class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-full text-sm font-medium transition-colors hover:bg-brand-50">Voice
-                        of Faith</a>
+                        class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-full text-sm font-medium transition-colors hover:bg-brand-50">
+                        <span class="sm:hidden">VOF</span>
+                        <span class="hidden sm:inline">Voice of Faith</span>
+                    </a>
                     <a href="{{ route('events') }}"
                         class="text-gray-600 hover:text-brand-600 px-3 py-2 rounded-full text-sm font-medium transition-colors hover:bg-brand-50">Events</a>
                     <a href="{{ route('privacy') }}"
