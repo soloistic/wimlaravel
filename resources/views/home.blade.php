@@ -24,11 +24,12 @@
                 </span>
                 <h1
                     class="text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-white mb-4 tracking-tight leading-tight">
-                    I welcome you to Word Increase ministries. 
+                    I welcome you to Word Increase Ministries.
                 </h1>
                 <p
                     class="text-lg md:text-xl text-brand-100/90 font-light leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-                    <br/>The Lord is gracious unto you and has kept you day after day to preserve you for your testimonies.
+                    <br />The Lord is gracious unto you and has kept you day after day to preserve you for your
+                    testimonies.
                     The plan and purpose of God concerning his children is to be victorious at all times in this world.
                     That is what Jesus has come to deliver unto us. <br /><br />
                     I therefore encourage you to pursue the path of living a victorious life by living each day by faith
