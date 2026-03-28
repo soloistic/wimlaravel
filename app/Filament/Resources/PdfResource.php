@@ -28,14 +28,16 @@ class PdfResource extends Resource
     ->maxLength(255),
 
                 Forms\Components\FileUpload::make('pdf_url')
-    ->label('PDF File')
-    ->directory('pdfs')
+                    ->label('PDF File')
+                    ->disk('public')
+                    ->directory('pdfs')
     ->acceptedFileTypes(['application/pdf'])
     ->required(),
 
-Forms\Components\FileUpload::make('thumbnail_url')
-    ->label('Thumbnail Image')
-    ->directory('thumbnails')
+                Forms\Components\FileUpload::make('thumbnail_url')
+                    ->label('Thumbnail Image')
+                    ->disk('public')
+                    ->directory('thumbnails')
     ->image()
     ->required(),
 
