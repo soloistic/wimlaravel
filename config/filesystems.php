@@ -41,7 +41,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => env('LARAVEL_PUBLIC_PATH', public_path()) . '/storage',
-            'url' => env('APP_URL').'/storage',
+            'url' => '/storage',
             'visibility' => 'public',
             'throw' => false,
             'report' => false,
