@@ -1,79 +1,91 @@
 # Word Increase Ministries (WIM) - Voice of Faith Magazine Site
 
-This is a Laravel application designed to manage and display the "Voice of Faith" (VOF) magazines for Word Increase Ministries. It features a public-facing website for users to view and download magazines, and a Filament-powered admin panel for easy content management.
+This is a modernized Laravel application designed to manage and display the **"Voice of Faith" (VOF)** magazines for Word Increase Ministries. It features a premium, responsive public-facing website and a robust Filament-powered admin panel for seamless content delivery.
 
-## Features
+---
 
--   **Public Magazine Archive:** A clean, responsive interface for users to browse the collection of VOF magazines.
--   **PDF Viewer:** Integrated PDF viewer allows users to read magazines directly in the browser or download them for offline reading.
--   **Admin Panel:** Built with [Filament](https://filamentphp.com/), providing a robust backend to manage PDF uploads, thumbnails, and magazine details.
--   **Automated Seeder:** A custom seeder that automatically populates the database from PDF files in the storage directory, intelligently parsing filenames (e.g., `Mar25`) into readable titles (e.g., "March 2025").
--   **API:** A dedicated API endpoint (`/api/pdfs`) to access magazine data programmatically.
--   **Static Pages:** Includes About Us, Events, and Privacy Policy pages with a consistent, professional design.
+## 🚀 Key Features
 
-## Installation
+- **Premium UI/UX:** A modern, cinemátic design using glassmorphism, Google Fonts (Playfair Display & Inter), and a custom brand-consistent color palette.
+- **Dynamic Magazine Archive:** 
+    - **Homepage:** Showcases the 3 most recent releases with a "View All" transition.
+    - **Voice of Faith Page:** Automatically groups magazines by year in descending order for easy browsing.
+- **Admin Panel (Filament v3):** 
+    - Full CRUD management for PDFs and thumbnails.
+    - **User Management:** Manage admin accounts directly from the UI.
+    - **Default Sorting:** Magazines are automatically sorted by newest release first.
+- **Symlink-Free Storage:** Reconfigured for high compatibility with restrictive staging/production environments (stores directly in `public/storage`).
+- **Stateless API:** Dedicated endpoints (`/api/pdfs`) for programmatic access to magazine data.
+- **Regulatory Compliance:** Google Play-compliant Privacy Policy with clear data disclosure and deletion processes.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <repository-url>
-    cd vof_mag_site
-    ```
+---
 
-2.  **Install dependencies:**
-    ```bash
-    composer install
-    npm install
-    npm run build
-    ```
+## 🏗️ Architecture & Tech Stack
 
-3.  **Environment Setup:**
-    Copy the `.env.example` file to `.env` and configure your database and other settings.
-    ```bash
-    cp .env.example .env
-    php artisan key:generate
-    ```
-    *Note: Ensure `APP_URL` in your `.env` includes the port if you are using `php artisan serve` (e.g., `http://127.0.0.1:8000`).*
+- **Backend:** Laravel 12 (PHP ^8.2)
+- **Admin Backend:** Filament PHP (TALL Stack: Tailwind, Alpine, Laravel, Livewire)
+- **Frontend:** Blade Templates + Tailwind CSS (CDN)
+- **API Security:** Laravel Sanctum
+- **Architecture Pattern:** Standard MVC with service-level logic handled via Controllers and Filament Resources.
 
-4.  **Database Migration & Seeding:**
-    Run the migrations to set up the database schema.
-    ```bash
-    php artisan migrate
-    ```
+### Core Components
+- **`Pdf` Model:** Handles publication data (`title`, `pdf_url`, `thumbnail_url`, `published_at`).
+- **`User` Model:** Implements `FilamentUser` for secure administrative access.
+- **`HomeController`:** Manages public views including the year-grouped archive logic.
+- **`PdfController` (API):** Serves JSON data for external consumption.
 
-5.  **Storage Link:**
-    Create a symbolic link to make your storage accessible from the web.
-    ```bash
-    php artisan storage:link
-    ```
+---
 
-## Usage
+## 🛠️ Installation & Setup
 
-### Managing Content
+1. **Clone & Install:**
+   ```bash
+   git clone <repository-url>
+   composer install
+   npm install && npm run build
+   ```
 
-To add new magazines, you can either use the admin panel or the automated seeder.
+2. **Environment Configuration:**
+   Copy `.env.example` to `.env`. Ensure `APP_URL` is set correctly.
+   ```bash
+   php artisan key:generate
+   ```
 
-**Using the Seeder:**
-1.  Place your PDF files in `storage/app/public/pdfs`.
-2.  Place corresponding thumbnails (same filename, `.jpg` extension) in `storage/app/public/thumbnails`.
-3.  Run the seeder:
-    ```bash
-    php artisan db:seed --class=MagazineSeeder
-    ```
-    *The seeder will automatically create titles based on the filename (e.g., `Mar25.pdf` becomes "March 2025").*
+3. **Database & Storage:**
+   ```bash
+   php artisan migrate
+   ```
+   *Note: `php artisan storage:link` is no longer strictly required as the application is configured to write directly to `public/storage` for better compatibility.*
 
-**Using the Admin Panel:**
-1.  Create an admin user:
-    ```bash
-    php artisan make:filament-user
-    ```
-2.  Log in at `/admin` to upload and manage magazines manually.
+4. **Development
 
-### Development
+   To start the local development server:
 
-To start the local development server:
+   ```bash
+   php artisan serve
+   ```
 
-```bash
-php artisan serve
-```
+   Access the site at `http://127.0.0.1:8000`.
 
-Access the site at `http://127.0.0.1:8000`.
+---
+
+## 📖 Usage Guide
+
+### Managing Magazines
+- **Admin Panel:** Access at `/admin`. Create your first user via CLI: `php artisan make:filament-user`.
+- **Bulk Upload (Seeder):**
+  1. Place PDFs in `public/storage/pdfs` and Thumbnails in `public/storage/thumbnails`.
+  2. Run `php artisan db:seed --class=MagazineSeeder`.
+  *Filenames like `Mar25.pdf` are automatically parsed into "March 2025".*
+
+### User Management
+You can now add colleagues as admins directly through the **Users** menu in the Admin Panel without using the command line.
+
+---
+
+## 🛡️ Health & Safety
+- **Staging Fix:** If migrating from an old setup, manually move files from `storage/app/public` to `public/storage`.
+- **Permissions:** Ensure the `public/storage` and `bootstrap/cache` directories are writable by the web server (`775`).
+
+---
+*Last updated: March 28, 2026*
