@@ -54,6 +54,7 @@ Forms\Components\DatePicker::make('published_at')
                 Tables\Columns\TextColumn::make('title')->searchable(),
                 Tables\Columns\TextColumn::make('published_at')->date()->sortable(),
             ])
+            ->defaultSort('published_at', 'desc')
             ->filters([
                 //
             ])
