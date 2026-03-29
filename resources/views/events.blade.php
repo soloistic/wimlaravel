@@ -39,8 +39,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                 d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
                         </svg>
-                        <div class="text-xl font-bold font-serif tracking-tight">Radio UNILAG</div>
-                        <div class="text-sm font-medium tracking-widest uppercase">103.1 FM</div>
+                        <div class="text-xl font-bold font-serif tracking-tight">Radio UNILAG (103.1 FM)</div>
+                        <div class="text-xl font-bold font-serif tracking-tight">Amen online radio (Internet)</div>
                     </div>
                 </div>
                 <div class="p-8 flex-1 flex flex-col">
@@ -68,13 +68,17 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            7:00 AM - 7:15 AM
+                            Radio UNILAG: 7:00 AM - 7:15 AM
+                        </div>
+                        <div class="flex items-start text-sm text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 mr-3 mt-0.5"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Amen online radio: 9:00 AM - 9:15 AM
                         </div>
                     </div>
-                    <a href="https://unilag.edu.ng/unilag-radio" target="_blank"
-                        class="block text-center w-full bg-brand-50 text-brand-700 font-semibold py-3 px-6 rounded-full hover:bg-brand-600 hover:text-white transition-all duration-300 shadow-sm mt-auto">
-                        Listen Online
-                    </a>
                 </div>
             </div>
 
@@ -91,7 +95,7 @@
                                 d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                         <div class="text-xl font-bold font-serif tracking-tight">Virtual</div>
-                        <div class="text-sm font-medium tracking-widest uppercase">Youtube</div>
+                        <div class="text-xl font-bold font-serif tracking-tight">Youtube</div>
                     </div>
                 </div>
                 <div class="p-8 flex-1 flex flex-col">
@@ -99,9 +103,9 @@
                         event</span>
                     <h3
                         class="text-2xl font-bold font-serif text-gray-900 mb-3 group-hover:text-brand-600 transition-colors leading-snug">
-                        Faith For Breafkast</h3>
+                        Faith For Breakfast</h3>
                     <p class="text-gray-500 text-sm mb-6 flex-1 leading-relaxed">Join us for a moment of faith adventure
-                        for everyday victory.</p>
+                        for everyday victory.<br /><br /> Come and learn at His feet to boost your faith.</p>
 
                     <div class="space-y-3 mb-8">
                         <div class="flex items-start text-sm text-gray-600">
@@ -118,7 +122,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            9:00 AM - 10:00 AM
+                            Youtube: 9:00 AM - 10:00 AM
                         </div>
                     </div>
                     <a href="https://bit.ly/m/WordIncreaseMinistry" target="_blank"
