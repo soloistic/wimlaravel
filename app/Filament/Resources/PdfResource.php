@@ -31,6 +31,7 @@ class PdfResource extends Resource
                     ->label('PDF File')
                     ->disk('public')
                     ->directory('pdfs')
+                    ->preserveFilenames()
     ->acceptedFileTypes(['application/pdf'])
     ->required(),
 
@@ -38,6 +39,7 @@ class PdfResource extends Resource
                     ->label('Thumbnail Image')
                     ->disk('public')
                     ->directory('thumbnails')
+                    ->preserveFilenames()
     ->image()
     ->required(),
 
