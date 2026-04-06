@@ -105,7 +105,7 @@
                         class="text-2xl font-bold font-serif text-gray-900 mb-3 group-hover:text-brand-600 transition-colors leading-snug">
                         Faith For Breakfast</h3>
                     <p class="text-gray-500 text-sm mb-6 flex-1 leading-relaxed">Join us live for a moment of faith adventure
-                        for everyday victory.<br /><br /> Come and learn at His feet to boost your faith.</p>
+                        for everyday victory.<br />Come and learn at His feet to boost your faith.</p>
 
                     <div class="space-y-3 mb-8">
                         <div class="flex items-start text-sm text-gray-600">
@@ -114,7 +114,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
-                            3rd Saturday of every month
+                            3rd Saturday (Jan - Sept)
                         </div>
                         <div class="flex items-start text-sm text-gray-600">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 mr-3 mt-0.5"
@@ -124,6 +124,33 @@
                             </svg>
                             Youtube: 9:00 AM - 10:00 AM
                         </div>
+                        @php
+                            $nextEventDate = null;
+                            $now = \Carbon\Carbon::now();
+                            $checkDate = $now->copy();
+                            
+                            for ($i = 0; $i < 24; $i++) {
+                                $month = $checkDate->month;
+                                if ($month >= 1 && $month <= 9) {
+                                    $thirdSaturday = \Carbon\Carbon::parse("third saturday of " . $checkDate->format('F Y'))->setTime(10, 0, 0);
+                                    if ($now->lte($thirdSaturday)) {
+                                        $nextEventDate = $thirdSaturday;
+                                        break;
+                                    }
+                                }
+                                $checkDate->addMonthNoOverflow()->startOfMonth();
+                            }
+                        @endphp
+                        @if($nextEventDate)
+                        <div class="flex items-start text-sm text-brand-600 font-semibold animate-pulse-subtle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-500 mr-3 mt-0.5"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            The next faith for breakfast is on {{ $nextEventDate->format('F d Y') }}
+                        </div>
+                        @endif
                     </div>
                     <a href="https://bit.ly/m/WordIncreaseMinistry" target="_blank"
                         class="block text-center w-full bg-brand-50 text-brand-700 font-semibold py-3 px-6 rounded-full hover:bg-brand-600 hover:text-white transition-all duration-300 shadow-sm mt-auto">

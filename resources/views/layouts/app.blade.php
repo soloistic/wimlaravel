@@ -34,6 +34,15 @@
                             800: '#9a3412',
                             900: '#7c2d12',
                         }
+                    },
+                    keyframes: {
+                        'pulse-subtle': {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.8 },
+                        }
+                    },
+                    animation: {
+                        'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite',
                     }
                 }
             }
