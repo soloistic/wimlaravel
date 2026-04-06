@@ -114,7 +114,7 @@
                                     d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
                             </svg>
                         </a>
-                        <a href="https://www.facebook.com/groups/180926409163212/" target="_blank"
+                        <a href="https://www.facebook.com/p/Word-Increase-Ministries-Page-100089681253060" target="_blank"
                             rel="noopener noreferrer" class="text-gray-400 hover:text-red-600 transition-colors"
                             title="Facebook">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"
@@ -180,7 +180,7 @@
                         </a>
                     </div>
                     <div class="flex flex-col space-y-3">
-                        <a href="https://www.facebook.com/groups/180926409163212/" target="_blank"
+                        <a href="https://www.facebook.com/p/Word-Increase-Ministries-Page-100089681253060" target="_blank"
                             rel="noopener noreferrer"
                             class="text-gray-300 hover:text-white inline-flex items-center gap-2 group">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"
