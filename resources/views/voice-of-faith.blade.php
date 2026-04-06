@@ -22,50 +22,47 @@
         @foreach($groupedPdfs as $year => $pdfs)
             <div class="mb-20 last:mb-0">
                 <div class="mb-10 flex items-center">
-                    <h2 class="text-4xl font-bold font-serif text-brand-900">{{ $year }}</h2>
+                    <h2 class="text-3xl font-bold font-serif text-brand-900">{{ $year }}</h2>
                     <div class="h-px flex-1 bg-gradient-to-r from-brand-200 to-transparent mx-8"></div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-4 gap-y-10">
                     @foreach($pdfs as $pdf)
-                        <div class="group bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 overflow-hidden transform hover:-translate-y-2 flex flex-col">
-                            <a href="{{ route('magazine', $pdf) }}" class="block relative overflow-hidden aspect-[3/4]">
+                        <div class="group flex flex-col">
+                            <!-- Thumbnail with Hover Overlay -->
+                            <div class="relative aspect-[3/4] rounded-xl overflow-hidden shadow-sm border border-gray-100 group-hover:shadow-xl transition-all duration-500 bg-gray-50">
                                 <img
                                     src="{{ Storage::url($pdf->thumbnail_url) }}"
                                     alt="{{ $pdf->title }}"
-                                    class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                                    class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
                                 >
-                                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
-                                    <span class="text-white font-medium flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                        Read now 
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                        </svg>
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="p-8 flex-1 flex flex-col bg-white">
-                                <span class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-3 block">Edition</span>
-                                <h3 class="text-2xl font-bold font-serif text-gray-900 mb-6 group-hover:text-brand-600 transition-colors line-clamp-2 leading-snug">{{ $pdf->title }}</h3>
                                 
-                                <div class="mt-auto flex items-center justify-between pt-6 border-t border-gray-100">
-                                    <a
-                                        href="{{ route('magazine', $pdf) }}"
-                                        class="inline-flex items-center justify-center bg-brand-50 text-brand-700 hover:bg-brand-600 hover:text-white px-5 py-2.5 text-sm font-semibold rounded-full transition-all duration-300 shadow-sm"
-                                    >
-                                        View Magazine
+                                <!-- Action Overlay -->
+                                <div class="absolute inset-0 bg-brand-900/60 opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-[2px] flex items-center justify-center gap-2 sm:gap-3">
+                                    <a href="{{ route('magazine', $pdf) }}" 
+                                       class="p-2 sm:p-2.5 bg-white rounded-full text-brand-600 hover:bg-brand-50 hover:scale-110 transition-all duration-200 shadow-lg"
+                                       title="Read Magazine">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                        </svg>
                                     </a>
-                                    <a
-                                        href="{{ Storage::url($pdf->pdf_url) }}"
-                                        target="_blank"
-                                        class="text-gray-400 hover:text-brand-600 transition-colors p-2 rounded-full hover:bg-brand-50"
-                                        title="Download PDF"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <a href="{{ Storage::url($pdf->pdf_url) }}" 
+                                       target="_blank"
+                                       class="p-2 sm:p-2.5 bg-white rounded-full text-brand-600 hover:bg-brand-50 hover:scale-110 transition-all duration-200 shadow-lg"
+                                       title="Download PDF">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                                         </svg>
                                     </a>
                                 </div>
+                            </div>
+                            
+                            <!-- Compact Title -->
+                            <div class="mt-3 px-1">
+                                <h3 class="text-[10px] sm:text-xs font-bold text-gray-900 line-clamp-2 group-hover:text-brand-600 transition-colors leading-tight text-center">
+                                    {{ $pdf->title }}
+                                </h3>
                             </div>
                         </div>
                     @endforeach
