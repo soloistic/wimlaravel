@@ -95,7 +95,7 @@
                                 d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                         <div class="text-xl font-bold font-serif tracking-tight">Virtual</div>
-                        <div class="text-xl font-bold font-serif tracking-tight">Youtube</div>
+                        <div class="text-xl font-bold font-serif tracking-tight">LIVE on Youtube</div>
                     </div>
                 </div>
                 <div class="p-8 flex-1 flex flex-col">
@@ -104,7 +104,7 @@
                     <h3
                         class="text-2xl font-bold font-serif text-gray-900 mb-3 group-hover:text-brand-600 transition-colors leading-snug">
                         Faith For Breakfast</h3>
-                    <p class="text-gray-500 text-sm mb-6 flex-1 leading-relaxed">Join us for a moment of faith adventure
+                    <p class="text-gray-500 text-sm mb-6 flex-1 leading-relaxed">Join us live for a moment of faith adventure
                         for everyday victory.<br /><br /> Come and learn at His feet to boost your faith.</p>
 
                     <div class="space-y-3 mb-8">

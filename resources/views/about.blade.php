@@ -98,7 +98,7 @@
     <div class="bg-white rounded-3xl shadow-lg shadow-gray-200/40 p-12 text-center max-w-4xl mx-auto border border-gray-50">
         <h2 class="text-3xl font-bold font-serif text-gray-900 mb-6">Get in Touch</h2>
         <p class="text-gray-500 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-            We'd love to hear from you. Reach out to us through email or give us a call.
+            We'd love to hear from you. Reach out to us through email or via Whatsapp.
         </p>
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
             <a href="mailto:wordincreaseministry@gmail.com" class="w-full sm:w-auto bg-brand-600 text-white px-8 py-3.5 rounded-full font-medium hover:bg-brand-700 hover:shadow-lg hover:shadow-brand-600/30 transition-all duration-300 flex items-center justify-center gap-2">
@@ -106,7 +106,9 @@
                 Email Us
             </a>
             <a href="tel:+2348139323232" class="w-full sm:w-auto bg-gray-900 text-white px-8 py-3.5 rounded-full font-medium hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-900/30 transition-all duration-300 flex items-center justify-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M20.52 3.48A11.79 11.79 0 0 0 12.01 0C5.39 0 .02 5.37.02 12c0 2.12.55 4.18 1.6 6L0 24l6.19-1.62A11.93 11.93 0 0 0 12.01 24c6.62 0 11.99-5.37 11.99-12 0-3.2-1.25-6.2-3.48-8.52zM12.01 21.8c-1.8 0-3.55-.48-5.08-1.39l-.36-.21-3.67.96.98-3.58-.23-.37a9.77 9.77 0 0 1-1.5-5.21c0-5.4 4.4-9.8 9.86-9.8 2.63 0 5.1 1.02 6.96 2.88a9.76 9.76 0 0 1 2.88 6.92c0 5.4-4.4 9.8-9.86 9.8zm5.42-7.36c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+</svg>
                 +234 813 932 3232
             </a>
         </div>
