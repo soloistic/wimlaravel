@@ -108,28 +108,17 @@
                         <a href="https://www.youtube.com/@wordincreaseministries" target="_blank"
                             rel="noopener noreferrer" class="text-gray-400 hover:text-red-600 transition-colors"
                             title="YouTube">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                            </svg>
+                            <x-icons.youtube class="w-5 h-5" />
                         </a>
                         <a href="https://www.facebook.com/p/Word-Increase-Ministries-Page-100089681253060" target="_blank"
                             rel="noopener noreferrer" class="text-gray-400 hover:text-blue-600 transition-colors"
                             title="Facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.99h-2.54v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.99C18.343 21.128 22 16.991 22 12z" />
-                            </svg>
+                            <x-icons.facebook class="w-5 h-5" />
                         </a>
                         <a href="https://open.spotify.com/show/4mrIULt7smtLjqZoIOaKxR" target="_blank"
                             rel="noopener noreferrer" class="text-gray-400 hover:text-[#1DB954] transition-colors"
                             title="Spotify">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.518 17.306c-.216.356-.66.47-1.016.255-2.782-1.7-6.28-2.085-10.407-1.142-.397.09-.795-.156-.886-.553-.09-.397.156-.795.553-.886 4.511-1.031 8.38-.587 11.502 1.32.356.215.47.66.254 1.006zm1.472-3.272c-.271.44-.847.578-1.286.307-3.183-1.957-8.034-2.524-11.806-1.381-.49.145-1.007-.133-1.152-.622-.145-.49.133-1.007.622-1.152 4.305-1.307 9.66-.674 13.314 1.574.44.271.578.847.308 1.274zm.127-3.404c-3.815-2.266-10.11-2.474-13.752-1.369-.585.177-1.203-.152-1.38-.737s.152-1.203.737-1.38c4.186-1.27 11.135-1.025 15.528 1.585.527.313.7.99.387 1.518-.313.527-.99.7-1.52.383z"/>
-                            </svg>
+                            <x-icons.spotify class="w-5 h-5" />
                         </a>
                     </div>
                 </div>
@@ -178,33 +167,19 @@
                         <a href="https://www.youtube.com/@wordincreaseministries" target="_blank"
                             rel="noopener noreferrer"
                             class="text-gray-300 hover:text-white inline-flex items-center gap-2 group">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-5 h-5 text-gray-400 group-hover:text-red-500 transition-colors"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                            </svg>
+                            <x-icons.youtube class="w-5 h-5 text-gray-400 group-hover:text-red-500 transition-colors" />
                             YouTube Channel
                         </a>
                         <a href="https://www.facebook.com/p/Word-Increase-Ministries-Page-100089681253060" target="_blank"
                             rel="noopener noreferrer"
                             class="text-gray-300 hover:text-white inline-flex items-center gap-2 group">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.99h-2.54v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.99C18.343 21.128 22 16.991 22 12z" />
-                            </svg>
+                            <x-icons.facebook class="w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors" />
                             Facebook
                         </a>
                         <a href="https://open.spotify.com/show/4mrIULt7smtLjqZoIOaKxR" target="_blank"
                             rel="noopener noreferrer"
                             class="text-gray-300 hover:text-white inline-flex items-center gap-2 group">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-5 h-5 text-gray-400 group-hover:text-[#1DB954] transition-colors"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.518 17.306c-.216.356-.66.47-1.016.255-2.782-1.7-6.28-2.085-10.407-1.142-.397.09-.795-.156-.886-.553-.09-.397.156-.795.553-.886 4.511-1.031 8.38-.587 11.502 1.32.356.215.47.66.254 1.006zm1.472-3.272c-.271.44-.847.578-1.286.307-3.183-1.957-8.034-2.524-11.806-1.381-.49.145-1.007-.133-1.152-.622-.145-.49.133-1.007.622-1.152 4.305-1.307 9.66-.674 13.314 1.574.44.271.578.847.308 1.274zm.127-3.404c-3.815-2.266-10.11-2.474-13.752-1.369-.585.177-1.203-.152-1.38-.737s.152-1.203.737-1.38c4.186-1.27 11.135-1.025 15.528 1.585.527.313.7.99.387 1.518-.313.527-.99.7-1.52.383z"/>
-                            </svg>
+                            <x-icons.spotify class="w-5 h-5 text-gray-400 group-hover:text-[#1DB954] transition-colors" />
                             Spotify Podcasts
                         </a>
                     </div>

@@ -90,9 +90,7 @@
                     <div class="absolute inset-0 bg-black/10"></div>
                     <div class="text-center text-white relative z-10">
                         {{-- Spotify logo SVG --}}
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2 opacity-90" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.518 17.306c-.216.356-.66.47-1.016.255-2.782-1.7-6.28-2.085-10.407-1.142-.397.09-.795-.156-.886-.553-.09-.397.156-.795.553-.886 4.511-1.031 8.38-.587 11.502 1.32.356.215.47.66.254 1.006zm1.472-3.272c-.271.44-.847.578-1.286.307-3.183-1.957-8.034-2.524-11.806-1.381-.49.145-1.007-.133-1.152-.622-.145-.49.133-1.007.622-1.152 4.305-1.307 9.66-.674 13.314 1.574.44.271.578.847.308 1.274zm.127-3.404c-3.815-2.266-10.11-2.474-13.752-1.369-.585.177-1.203-.152-1.38-.737s.152-1.203.737-1.38c4.186-1.27 11.135-1.025 15.528 1.585.527.313.7.99.387 1.518-.313.527-.99.7-1.52.383z"/>
-                        </svg>
+                        <x-icons.spotify class="h-16 w-16 mx-auto mb-2 opacity-90" />
                         <div class="text-xl font-bold font-serif tracking-tight">Old Broadcasts</div>
                         <div class="text-sm font-medium opacity-80 tracking-wide">on Spotify</div>
                     </div>
@@ -123,9 +121,7 @@
                     </div>
                     <a href="https://open.spotify.com/show/4mrIULt7smtLjqZoIOaKxR" target="_blank" rel="noopener noreferrer"
                         class="block text-center w-full bg-green-50 text-green-700 font-semibold py-3 px-6 rounded-full hover:bg-[#1DB954] hover:text-white transition-all duration-300 shadow-sm mt-auto flex items-center justify-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.518 17.306c-.216.356-.66.47-1.016.255-2.782-1.7-6.28-2.085-10.407-1.142-.397.09-.795-.156-.886-.553-.09-.397.156-.795.553-.886 4.511-1.031 8.38-.587 11.502 1.32.356.215.47.66.254 1.006zm1.472-3.272c-.271.44-.847.578-1.286.307-3.183-1.957-8.034-2.524-11.806-1.381-.49.145-1.007-.133-1.152-.622-.145-.49.133-1.007.622-1.152 4.305-1.307 9.66-.674 13.314 1.574.44.271.578.847.308 1.274zm.127-3.404c-3.815-2.266-10.11-2.474-13.752-1.369-.585.177-1.203-.152-1.38-.737s.152-1.203.737-1.38c4.186-1.27 11.135-1.025 15.528 1.585.527.313.7.99.387 1.518-.313.527-.99.7-1.52.383z"/>
-                        </svg>
+                        <x-icons.spotify class="h-5 w-5" />
                         Listen on Spotify
                     </a>
                 </div>
@@ -139,9 +135,7 @@
                     <div class="absolute inset-0 bg-black/10"></div>
                     <div class="text-center text-white relative z-10">
                         {{-- YouTube logo SVG --}}
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2 opacity-90" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
+                        <x-icons.youtube class="h-16 w-16 mx-auto mb-2 opacity-90" />
                         <div class="text-xl font-bold font-serif tracking-tight">Virtual</div>
                         <div class="text-xl font-bold font-serif tracking-tight">LIVE on YouTube</div>
                     </div>
@@ -202,9 +196,7 @@
                     </div>
                     <a href="https://bit.ly/m/WordIncreaseMinistry" target="_blank" rel="noopener noreferrer"
                         class="block text-center w-full bg-red-50 text-red-700 font-semibold py-3 px-6 rounded-full hover:bg-[#FF0000] hover:text-white transition-all duration-300 shadow-sm mt-auto flex items-center justify-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
+                        <x-icons.youtube class="h-5 w-5" />
                         Join Online
                     </a>
                 </div>
