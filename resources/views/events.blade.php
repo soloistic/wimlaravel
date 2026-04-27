@@ -133,25 +133,24 @@
 
             <!-- Faith for breakfast -->
             <div
-                class="group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
+                class="group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
                 <div
-                    class="h-48 bg-gradient-to-br from-brand-600 to-orange-500 flex items-center justify-center relative overflow-hidden">
+                    class="h-48 bg-gradient-to-br from-[#FF0000] to-[#cc0000] flex items-center justify-center relative overflow-hidden">
                     <div class="absolute inset-0 bg-black/10"></div>
                     <div class="text-center text-white relative z-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2 opacity-90" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        {{-- YouTube logo SVG --}}
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2 opacity-90" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                         </svg>
                         <div class="text-xl font-bold font-serif tracking-tight">Virtual</div>
-                        <div class="text-xl font-bold font-serif tracking-tight">LIVE on Youtube</div>
+                        <div class="text-xl font-bold font-serif tracking-tight">LIVE on YouTube</div>
                     </div>
                 </div>
                 <div class="p-8 flex-1 flex flex-col">
-                    <span class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-3 block">Monthly
+                    <span class="text-xs font-bold tracking-widest text-red-600 uppercase mb-3 block">Monthly
                         event</span>
                     <h3
-                        class="text-2xl font-bold font-serif text-gray-900 mb-3 group-hover:text-brand-600 transition-colors leading-snug">
+                        class="text-2xl font-bold font-serif text-gray-900 mb-3 group-hover:text-red-600 transition-colors leading-snug">
                         Faith For Breakfast</h3>
                     <p class="text-gray-500 text-sm mb-6 flex-1 leading-relaxed">Join us live for a moment of faith adventure
                         for everyday victory.<br />Come and learn at His feet to boost your faith.</p>
@@ -191,8 +190,8 @@
                             }
                         @endphp
                         @if($nextEventDate)
-                        <div class="flex items-start text-sm text-brand-600 font-semibold animate-pulse-subtle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-500 mr-3 mt-0.5"
+                        <div class="flex items-start text-sm text-red-600 font-semibold animate-pulse-subtle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-500 mr-3 mt-0.5"
                                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -201,8 +200,11 @@
                         </div>
                         @endif
                     </div>
-                    <a href="https://bit.ly/m/WordIncreaseMinistry" target="_blank"
-                        class="block text-center w-full bg-brand-50 text-brand-700 font-semibold py-3 px-6 rounded-full hover:bg-brand-600 hover:text-white transition-all duration-300 shadow-sm mt-auto">
+                    <a href="https://bit.ly/m/WordIncreaseMinistry" target="_blank" rel="noopener noreferrer"
+                        class="block text-center w-full bg-red-50 text-red-700 font-semibold py-3 px-6 rounded-full hover:bg-[#FF0000] hover:text-white transition-all duration-300 shadow-sm mt-auto flex items-center justify-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
                         Join Online
                     </a>
                 </div>
