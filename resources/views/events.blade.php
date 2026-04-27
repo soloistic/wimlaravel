@@ -82,6 +82,55 @@
                 </div>
             </div>
 
+            <!-- Spotify Podcast Card -->
+            <div
+                class="group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:shadow-green-500/10 transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
+                <div
+                    class="h-48 bg-gradient-to-br from-[#1DB954] to-[#158a3e] flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                    <div class="text-center text-white relative z-10">
+                        {{-- Spotify logo SVG --}}
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2 opacity-90" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.518 17.306c-.216.356-.66.47-1.016.255-2.782-1.7-6.28-2.085-10.407-1.142-.397.09-.795-.156-.886-.553-.09-.397.156-.795.553-.886 4.511-1.031 8.38-.587 11.502 1.32.356.215.47.66.254 1.006zm1.472-3.272c-.271.44-.847.578-1.286.307-3.183-1.957-8.034-2.524-11.806-1.381-.49.145-1.007-.133-1.152-.622-.145-.49.133-1.007.622-1.152 4.305-1.307 9.66-.674 13.314 1.574.44.271.578.847.308 1.274zm.127-3.404c-3.815-2.266-10.11-2.474-13.752-1.369-.585.177-1.203-.152-1.38-.737s.152-1.203.737-1.38c4.186-1.27 11.135-1.025 15.528 1.585.527.313.7.99.387 1.518-.313.527-.99.7-1.52.383z"/>
+                        </svg>
+                        <div class="text-xl font-bold font-serif tracking-tight">Old Broadcasts</div>
+                        <div class="text-sm font-medium opacity-80 tracking-wide">on Spotify</div>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <span class="text-xs font-bold tracking-widest text-green-600 uppercase mb-3 block">Podcast Archive</span>
+                    <h3 class="text-2xl font-bold font-serif text-gray-900 mb-3 group-hover:text-green-600 transition-colors leading-snug">
+                        Faith Broadcasts on Spotify</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-1 leading-relaxed">
+                        Catch up on past Word Increase Ministries broadcasts. Listen to powerful teachings and
+                        faith-building messages from our archive, available anytime on Spotify.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-start text-sm text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                            </svg>
+                            Available on-demand, anytime
+                        </div>
+                        <div class="flex items-start text-sm text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                            </svg>
+                            Stream or download episodes
+                        </div>
+                    </div>
+                    <a href="https://open.spotify.com/show/4mrIULt7smtLjqZoIOaKxR" target="_blank" rel="noopener noreferrer"
+                        class="block text-center w-full bg-green-50 text-green-700 font-semibold py-3 px-6 rounded-full hover:bg-[#1DB954] hover:text-white transition-all duration-300 shadow-sm mt-auto flex items-center justify-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.518 17.306c-.216.356-.66.47-1.016.255-2.782-1.7-6.28-2.085-10.407-1.142-.397.09-.795-.156-.886-.553-.09-.397.156-.795.553-.886 4.511-1.031 8.38-.587 11.502 1.32.356.215.47.66.254 1.006zm1.472-3.272c-.271.44-.847.578-1.286.307-3.183-1.957-8.034-2.524-11.806-1.381-.49.145-1.007-.133-1.152-.622-.145-.49.133-1.007.622-1.152 4.305-1.307 9.66-.674 13.314 1.574.44.271.578.847.308 1.274zm.127-3.404c-3.815-2.266-10.11-2.474-13.752-1.369-.585.177-1.203-.152-1.38-.737s.152-1.203.737-1.38c4.186-1.27 11.135-1.025 15.528 1.585.527.313.7.99.387 1.518-.313.527-.99.7-1.52.383z"/>
+                        </svg>
+                        Listen on Spotify
+                    </a>
+                </div>
+            </div>
+
             <!-- Faith for breakfast -->
             <div
                 class="group bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
