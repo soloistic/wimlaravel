@@ -91,16 +91,16 @@
                     <div class="text-center text-white relative z-10">
                         {{-- Spotify logo SVG --}}
                         <x-icons.spotify class="h-16 w-16 mx-auto mb-2 opacity-90" />
-                        <div class="text-xl font-bold font-serif tracking-tight">Old Broadcasts</div>
+                        <div class="text-xl font-bold font-serif tracking-tight">Broadcasts</div>
                         <div class="text-sm font-medium opacity-80 tracking-wide">on Spotify</div>
                     </div>
                 </div>
                 <div class="p-8 flex-1 flex flex-col">
-                    <span class="text-xs font-bold tracking-widest text-green-600 uppercase mb-3 block">Podcast Archive</span>
+                    <span class="text-xs font-bold tracking-widest text-green-600 uppercase mb-3 block">Podcast</span>
                     <h3 class="text-2xl font-bold font-serif text-gray-900 mb-3 group-hover:text-green-600 transition-colors leading-snug">
                         Faith Broadcasts on Spotify</h3>
                     <p class="text-gray-500 text-sm mb-6 flex-1 leading-relaxed">
-                        Catch up on past Word Increase Ministries broadcasts. Listen to powerful teachings and
+                        Catch up on current and past Word Increase Ministries broadcasts. Listen to powerful teachings and
                         faith-building messages from our archive, available anytime on Spotify.
                     </p>
                     <div class="space-y-3 mb-8">
@@ -170,7 +170,7 @@
                             $nextEventDate = null;
                             $now = \Carbon\Carbon::now();
                             $checkDate = $now->copy();
-                            
+
                             for ($i = 0; $i < 24; $i++) {
                                 $month = $checkDate->month;
                                 if ($month >= 1 && $month <= 9) {
