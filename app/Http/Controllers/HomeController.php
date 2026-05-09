@@ -40,6 +40,14 @@ class HomeController extends Controller
     }
 
     /**
+     * Display the Android app privacy policy page.
+     */
+    public function privacyApp()
+    {
+        return view('privacy-app');
+    }
+
+    /**
      * Display the about us page.
      */
     public function about()
