@@ -10,8 +10,18 @@ updates:
       timezone: "Europe/London"
     open-pull-requests-limit: 5
     groups:
-      npm-development:
-        dependency-type: "development"
+      vite-laravel-toolchain:
+        patterns:
+          - "vite"
+          - "laravel-vite-plugin"
+      tailwind-toolchain:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/vite"
+      postcss-toolchain:
+        patterns:
+          - "postcss"
+          - "autoprefixer"
         update-types:
           - "minor"
           - "patch"
@@ -25,7 +35,18 @@ updates:
       timezone: "Europe/London"
     open-pull-requests-limit: 5
     groups:
-      composer-minor-patch:
+      laravel-runtime:
+        patterns:
+          - "laravel/framework"
+          - "laravel/sanctum"
+          - "laravel/tinker"
+        update-types:
+          - "minor"
+          - "patch"
+      phpunit-test-runner:
+        patterns:
+          - "phpunit/phpunit"
+          - "nunomaduro/collision"
         update-types:
           - "minor"
           - "patch"
