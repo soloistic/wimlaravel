@@ -3,6 +3,8 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
+    assignees: ["soloistic"]
+    reviewers: ["soloistic"]
     schedule:
       interval: "weekly"
       day: "monday"
@@ -28,6 +30,8 @@ updates:
 
   - package-ecosystem: "composer"
     directory: "/"
+    assignees: ["soloistic"]
+    reviewers: ["soloistic"]
     schedule:
       interval: "weekly"
       day: "monday"
