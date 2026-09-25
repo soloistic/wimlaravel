@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Word Increase Ministries (aka WIM)')</title>
     <meta name="description" content="@yield('description', 'Word Increase Ministries (aka WIM)')">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32.png') }}">
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('icons/apple-touch-icon.png') }}">
+
+    <!-- PWA -->
+    <link rel="manifest" href="{{ asset('manifest.webmanifest') }}">
+    <meta name="theme-color" content="#7c2d12">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="VOF">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,39 +25,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
 
-    <!-- Tailwind CSS CDN for quick styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#fdf8f6',
-                            100: '#f2e8e5',
-                            500: '#ea580c',
-                            600: '#d54d04',
-                            800: '#9a3412',
-                            900: '#7c2d12',
-                        }
-                    },
-                    keyframes: {
-                        'pulse-subtle': {
-                            '0%, 100%': { opacity: 1 },
-                            '50%': { opacity: 0.8 },
-                        }
-                    },
-                    animation: {
-                        'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite',
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Compiled CSS + JS (Vite, offline-capable — replaces Tailwind CDN) -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Custom CSS -->
     <style>
@@ -192,6 +171,16 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {
+                    // Offline support unavailable — site still works online.
+                });
+            });
+        }
+    </script>
 </body>
 
 </html>
