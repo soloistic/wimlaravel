@@ -64,6 +64,14 @@ class HomeController extends Controller
     }
 
     /**
+     * Display the offline fallback page (precached by the PWA service worker).
+     */
+    public function offline()
+    {
+        return view('offline');
+    }
+
+    /**
      * Display a specific magazine page.
      */
     public function magazine(Pdf $pdf)
