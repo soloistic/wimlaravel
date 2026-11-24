@@ -9,4 +9,5 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/events', [HomeController::class, 'events'])->name('events');
 Route::get('/privacy', [HomeController::class, 'privacy'])->name('privacy');
 Route::get('/privacy-app', [HomeController::class, 'privacyApp'])->name('privacy-app');
+Route::get('/offline', [HomeController::class, 'offline'])->name('offline');
 Route::get('/magazine/{pdf}', [HomeController::class, 'magazine'])->name('magazine');
